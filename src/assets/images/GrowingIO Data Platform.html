@@ -1,0 +1,1162 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)http://localhost:8000/data/channel/links -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <link rel="icon" href="http://localhost:8000/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="GrowingIO Data Platform">
+    <link rel="apple-touch-icon" href="http://localhost:8000/logo.png">
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="http://localhost:8000/manifest.json">
+    <!--
+      Notice the use of  in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>GrowingIO Data Platform</title>
+  <style>.font {
+  font-family: 'PingFang SC', sans-serif;
+}
+.box-sizing {
+  box-sizing: border-box;
+}
+.wrap {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+@keyframes container-rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes fill-unfill-rotate {
+  12.5% {
+    transform: rotate(135deg);
+  }
+  25% {
+    transform: rotate(270deg);
+  }
+  37.5% {
+    transform: rotate(405deg);
+  }
+  50% {
+    transform: rotate(540deg);
+  }
+  62.5% {
+    transform: rotate(675deg);
+  }
+  75% {
+    transform: rotate(810deg);
+  }
+  87.5% {
+    transform: rotate(945deg);
+  }
+  to {
+    transform: rotate(1080deg);
+  }
+}
+@keyframes left-spin {
+  0% {
+    transform: rotate(130deg);
+  }
+  50% {
+    transform: rotate(-5deg);
+  }
+  to {
+    transform: rotate(130deg);
+  }
+}
+@keyframes right-spin {
+  0% {
+    transform: rotate(-130deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+  to {
+    transform: rotate(-130deg);
+  }
+}
+@keyframes line-1-fade-in-out {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  26% {
+    opacity: 0;
+  }
+  89% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes line-2-fade-in-out {
+  0% {
+    opacity: 0;
+  }
+  15% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  51% {
+    opacity: 0;
+  }
+}
+@keyframes line-3-fade-in-out {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  76% {
+    opacity: 0;
+  }
+}
+@keyframes line-4-fade-in-out {
+  0% {
+    opacity: 0;
+  }
+  65% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+.gio-loading {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  line-height: 0;
+  text-align: center;
+}
+.gio-loading-wrapper-loading {
+  position: relative;
+  height: 100%;
+}
+.gio-loading-wrapper-loading > .gio-loading {
+  position: absolute;
+  top: 50%;
+  z-index: 4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  transform: translateY(-50%);
+}
+.gio-loading-container {
+  position: relative;
+  height: 100%;
+}
+.gio-loading-container-loading {
+  cursor: not-allowed;
+  pointer-events: none;
+}
+.gio-loading-container-loading::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 4;
+  content: '';
+}
+.gio-loading-container-blur-white::after {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.gio-loading-container-blur-black::after {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.gio-loading-ring {
+  display: inline-block;
+  animation: container-rotate 1600ms linear infinite;
+}
+.gio-loading-ring-line {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.gio-loading-ring-line-1 {
+  border-color: #1248e9;
+  animation: fill-unfill-rotate 4800ms cubic-bezier(0.4, 0, 0.2, 1) infinite both, line-1-fade-in-out 4800ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
+}
+.gio-loading-ring-line-2 {
+  border-color: #88a6ff;
+  animation: fill-unfill-rotate 4800ms cubic-bezier(0.4, 0, 0.2, 1) infinite both, line-2-fade-in-out 4800ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
+}
+.gio-loading-ring-line-3 {
+  border-color: #1248e9;
+  animation: fill-unfill-rotate 4800ms cubic-bezier(0.4, 0, 0.2, 1) infinite both, line-3-fade-in-out 4800ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
+}
+.gio-loading-ring-line-4 {
+  border-color: #99b1f9;
+  animation: fill-unfill-rotate 4800ms cubic-bezier(0.4, 0, 0.2, 1) infinite both, line-4-fade-in-out 4800ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
+}
+.gio-loading-ring-line-cog {
+  position: relative;
+  display: inline-block;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  border-color: inherit;
+}
+.gio-loading-ring-line-cog-inner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  box-sizing: border-box;
+  width: 200%;
+  height: 100%;
+  border-color: inherit;
+  border-style: solid;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  animation: none;
+}
+.gio-loading-ring-line-cog-inner-left {
+  border-right-color: transparent;
+  transform: rotate(129deg);
+  animation: left-spin 1200ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
+}
+.gio-loading-ring-line-cog-inner-right {
+  left: -100%;
+  border-left-color: transparent;
+  transform: rotate(-129deg);
+  animation: right-spin 1200ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
+}
+.gio-loading-ring-line-cog-inner-center {
+  left: -450%;
+  width: 1000%;
+}
+.gio-loading-ring-line-ticker {
+  position: absolute;
+  top: 0;
+  left: 45%;
+  box-sizing: border-box;
+  width: 10%;
+  height: 100%;
+  overflow: hidden;
+  border-color: inherit;
+}
+.gio-loading-large .gio-loading-ring {
+  width: 50px;
+  height: 50px;
+}
+.gio-loading-large .gio-loading-ring-line-cog-inner {
+  border-width: 3.5px;
+}
+.gio-loading-middle .gio-loading-ring {
+  width: 40px;
+  height: 40px;
+}
+.gio-loading-middle .gio-loading-ring-line-cog-inner {
+  border-width: 3px;
+}
+.gio-loading-small .gio-loading-ring {
+  width: 30px;
+  height: 30px;
+}
+.gio-loading-small .gio-loading-ring-line-cog-inner {
+  border-width: 2px;
+}
+.gio-loading-small .gio-loading-title-right {
+  height: 30px;
+}
+.gio-loading-middle .gio-loading-title-right {
+  height: 40px;
+}
+.gio-loading-large .gio-loading-title-right {
+  height: 50px;
+}
+.gio-loading-title {
+  color: #313E75;
+  font-size: 14px;
+}
+.gio-loading-title-bottom {
+  display: block;
+  height: 14px;
+  margin-top: 16px;
+}
+.gio-loading-title-right {
+  display: inline-block;
+  height: 100%;
+  margin-left: 16px;
+  line-height: 100%;
+  vertical-align: middle;
+}
+.gio-loading-indicator {
+  display: inline-block;
+  vertical-align: middle;
+}
+</style><style>.gio-button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  height: 36px;
+  margin: 0;
+  padding: 7px 12px;
+  overflow: hidden;
+  text-align: center;
+  text-transform: none;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  transition-duration: 0.2s;
+  transition-property: background-color, color, box-shadow;
+  -webkit-appearance: none;
+          appearance: none;
+  -webkit-user-select: none;
+          user-select: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+.gio-button_primary {
+  color: var(--gray-0, #ffffff);
+  background-color: var(--blue-2, #3867f4);
+  box-shadow: 0px 3px 8px rgba(36, 46, 89, 0.05);
+}
+.gio-button_primary:hover,
+.gio-button_primary.gio-button_active {
+  background-color: var(--blue-3, #1248e9);
+  box-shadow: 0px 8px 24px rgba(36, 46, 89, 0.1);
+}
+.gio-button_primary.gio-button_loading {
+  background-color: var(--blue-3, #1248e9);
+  cursor: not-allowed;
+  box-shadow: 0px 8px 24px rgba(36, 46, 89, 0.1);
+}
+.gio-button_primary.gio-button_disabled {
+  color: var(--gray-3, #adb2c2);
+  background-color: var(--gray-1, #f7f8fc);
+  cursor: not-allowed;
+  box-shadow: none;
+}
+.gio-button_secondary {
+  color: var(--gray-5, #242e59);
+  background-color: transparent;
+  border: 1px solid var(--gray-2, #dfe4ee);
+  border-radius: 4px;
+}
+.gio-button_secondary:hover,
+.gio-button_secondary.gio-button_active {
+  color: var(--blue-3, #1248e9);
+  background-color: var(--gray-1, #f7f8fc);
+}
+.gio-button_secondary.gio-button_loading {
+  color: var(--blue-3, #1248e9);
+  background-color: var(--gray-1, #f7f8fc);
+  cursor: not-allowed;
+}
+.gio-button_secondary.gio-button_disabled {
+  color: var(--gray-3, #adb2c2);
+  background-color: transparent;
+  cursor: not-allowed;
+}
+.gio-button_text {
+  padding: 7px 8px;
+  color: var(--gray-5, #242e59);
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+.gio-button_text:hover,
+.gio-button_text.gio-button_active {
+  color: var(--blue-3, #1248e9);
+  background-color: var(--gray-1, #f7f8fc);
+}
+.gio-button_text.gio-button_loading {
+  color: var(--blue-3, #1248e9);
+  background-color: var(--gray-1, #f7f8fc);
+  cursor: not-allowed;
+}
+.gio-button_text.gio-button_disabled {
+  color: var(--gray-3, #adb2c2);
+  background-color: transparent;
+  cursor: not-allowed;
+}
+.gio-button_small {
+  height: 30px;
+  padding: 4px 12px;
+  line-height: 1.42857143;
+}
+.gio-button_small.gio-button_text {
+  padding: 4px 8px;
+}
+.gio-button::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: currentColor;
+  border-radius: inherit;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition-timing-function: linear, linear, linear, cubic-bezier(0.91, 0.66, 1, 0.8);
+  transition-duration: 0.2s, 0.1s, 0.4s, 0.3s;
+  transition-property: width, height, opacity, border-radius;
+  content: '';
+  pointer-events: none;
+}
+.gio-button:enabled:active::after {
+  width: 0;
+  height: 0;
+  border-radius: 18px;
+  transform: translateX(-50%);
+  opacity: 0.3;
+  transition: 0s;
+}
+.gio-button:enabled:active::after .gio-button_small {
+  border-radius: 15px;
+}
+.gio-button:enabled:active {
+  box-shadow: 0px 3px 8px rgba(36, 46, 89, 0.05);
+}
+.gio-button-prefix-icon {
+  margin-right: 8px;
+  display: inherit;
+}
+.gio-button-prefix-icon svg {
+  width: 1em;
+  height: 1em;
+}
+.gio-button-suffix-icon {
+  margin-left: 8px;
+  display: inherit;
+}
+.gio-button-suffix-icon svg {
+  width: 1em;
+  height: 1em;
+}
+.gio-icon-button {
+  width: 36px;
+  height: 36px;
+  padding: 10px;
+}
+.gio-icon-button.gio-button_small {
+  width: 30px;
+  height: 30px;
+  padding: 7px;
+}
+.gio-icon-button > .gio-button-prefix-icon,
+.gio-icon-button > .gio-button-suffix-icon {
+  margin: 0;
+}
+</style><style>.gio-page {
+  text-align: center;
+}
+.gio-page__image {
+  display: inline-block;
+  width: inherit;
+  margin: 0;
+}
+.gio-page__description {
+  margin: 8px auto 0;
+  color: var(--gray-5, #242e59);
+  font-family: 'PingFang SC', sans-serif;
+  text-align: center;
+}
+.gio-page__footer {
+  margin: 16px 0 0;
+  text-align: center;
+}
+.gio-page-normal .gio-page__description {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+}
+.gio-page-normal .gio-page__image {
+  width: 450px;
+}
+.gio-page-normal.gio-page-empty .gio-page__description {
+  color: var(--gray-4, #7b819c);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+}
+.gio-page-normal.gio-page-empty .gio-page__image {
+  width: 300px;
+}
+.gio-page-small .gio-page__description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+}
+.gio-page-small .gio-page__image {
+  width: 220px;
+}
+.gio-page-small.gio-page-empty .gio-page__description {
+  color: var(--gray-4, #7b819c);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+}
+.gio-page-small.gio-page-empty .gio-page__image {
+  width: 150px;
+}
+</style><style>.gio-icon {
+  display: inline-block;
+  color: inherit;
+  font-style: normal;
+  line-height: 0;
+  text-align: center;
+  text-transform: none;
+  vertical-align: -0.125em;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.gio-icon > * {
+  line-height: 1;
+}
+
+.gio-icon svg {
+  display: inline-block;
+}
+
+.gio-icon::before {
+  display: none;
+}
+
+.gio-icon-rotating,
+.gio-icon-rotating::before {
+  display: inline-block;
+  animation: rotating 1s linear infinite;
+}
+
+@keyframes rotating {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9ub2RlX21vZHVsZXMvQGdpby1kZXNpZ24vaWNvbnMvZXMvV3JhcHBlci5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxxQkFBcUI7RUFDckIsY0FBYztFQUNkLGtCQUFrQjtFQUNsQixjQUFjO0VBQ2Qsa0JBQWtCO0VBQ2xCLG9CQUFvQjtFQUNwQix3QkFBd0I7RUFDeEIsa0NBQWtDO0VBQ2xDLG1DQUFtQztFQUNuQyxrQ0FBa0M7QUFDcEM7O0FBRUE7RUFDRSxjQUFjO0FBQ2hCOztBQUVBO0VBQ0UscUJBQXFCO0FBQ3ZCOztBQUVBO0VBQ0UsYUFBYTtBQUNmOztBQUVBOztFQUVFLHFCQUFxQjtFQUVyQixzQ0FBc0M7QUFDeEM7O0FBU0E7RUFDRTtJQUVFLHlCQUF5QjtFQUMzQjtBQUNGIiwic291cmNlc0NvbnRlbnQiOlsiLmdpby1pY29uIHtcbiAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICBjb2xvcjogaW5oZXJpdDtcbiAgZm9udC1zdHlsZTogbm9ybWFsO1xuICBsaW5lLWhlaWdodDogMDtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICB0ZXh0LXRyYW5zZm9ybTogbm9uZTtcbiAgdmVydGljYWwtYWxpZ246IC0wLjEyNWVtO1xuICB0ZXh0LXJlbmRlcmluZzogb3B0aW1pemVMZWdpYmlsaXR5O1xuICAtd2Via2l0LWZvbnQtc21vb3RoaW5nOiBhbnRpYWxpYXNlZDtcbiAgLW1vei1vc3gtZm9udC1zbW9vdGhpbmc6IGdyYXlzY2FsZTtcbn1cblxuLmdpby1pY29uID4gKiB7XG4gIGxpbmUtaGVpZ2h0OiAxO1xufVxuXG4uZ2lvLWljb24gc3ZnIHtcbiAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xufVxuXG4uZ2lvLWljb246OmJlZm9yZSB7XG4gIGRpc3BsYXk6IG5vbmU7XG59XG5cbi5naW8taWNvbi1yb3RhdGluZyxcbi5naW8taWNvbi1yb3RhdGluZzo6YmVmb3JlIHtcbiAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICAtd2Via2l0LWFuaW1hdGlvbjogcm90YXRpbmcgMXMgbGluZWFyIGluZmluaXRlO1xuICBhbmltYXRpb246IHJvdGF0aW5nIDFzIGxpbmVhciBpbmZpbml0ZTtcbn1cblxuQC13ZWJraXQta2V5ZnJhbWVzIHJvdGF0aW5nIHtcbiAgMTAwJSB7XG4gICAgLXdlYmtpdC10cmFuc2Zvcm06IHJvdGF0ZSgzNjBkZWcpO1xuICAgIHRyYW5zZm9ybTogcm90YXRlKDM2MGRlZyk7XG4gIH1cbn1cblxuQGtleWZyYW1lcyByb3RhdGluZyB7XG4gIDEwMCUge1xuICAgIC13ZWJraXQtdHJhbnNmb3JtOiByb3RhdGUoMzYwZGVnKTtcbiAgICB0cmFuc2Zvcm06IHJvdGF0ZSgzNjBkZWcpO1xuICB9XG59XG4iXSwic291cmNlUm9vdCI6IiJ9 */</style><style>/*
+  如果需要使用全局变量和 mixin，只需要引用当前文件
+*/
+.font {
+  font-family: 'PingFang SC', sans-serif;
+}
+.box-sizing {
+  box-sizing: border-box;
+}
+.wrap {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.gio-toast {
+  position: fixed;
+  top: 16px;
+  left: 0;
+  z-index: 2147483647;
+  width: 100%;
+  pointer-events: none;
+}
+.gio-toast-notice {
+  padding: 8px;
+  text-align: center;
+}
+.gio-toast-notice:first-child {
+  margin-top: -8px;
+}
+.gio-toast-notice-content {
+  display: inline-block;
+  box-sizing: border-box;
+  height: 40px;
+  padding: 9px 60px;
+  color: var(--gray-5, #242e59);
+  font-size: 14px;
+  line-height: 22px;
+  background-color: var(--gray-0, #ffffff);
+  border-radius: 4px;
+  pointer-events: all;
+  box-shadow: 0px 8px 24px rgba(36, 46, 89, 0.1);
+}
+.gio-toast-custom-content {
+  height: 22px;
+}
+.gio-toast-icon {
+  margin-right: 8px;
+  vertical-align: middle;
+}
+.gio-toast-notice.move-up-enter.move-up-enter-active {
+  animation-name: MessageMoveEnter;
+  animation-duration: 1s;
+}
+.gio-toast-notice.move-up-leave.move-up-leave-active {
+  animation-name: MessageMoveOut;
+  animation-duration: 0.3s;
+}
+@keyframes MessageMoveEnter {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+@keyframes MessageMoveOut {
+  0% {
+    max-height: 150px;
+    padding: 8px;
+    opacity: 1;
+  }
+  100% {
+    max-height: 0;
+    padding: 0;
+    opacity: 0;
+  }
+}
+.gio-toast-rtl {
+  direction: rtl;
+}
+.gio-toast-rtl span {
+  direction: rtl;
+}
+.gio-toast-rtl-icon {
+  margin-right: 0;
+  margin-left: 8px;
+}
+</style><style>/* stylelint-disable */
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  font-size: 10px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* Sections
+   ========================================================================== */
+
+/**
+ * Remove the margin in all browsers.
+ */
+
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+  background-color: #fff;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+td,
+th {
+  padding: 0;
+}
+* {
+  box-sizing: border-box;
+}
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+  font-family: monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+  font-family: monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type='button']::-moz-focus-inner,
+[type='reset']::-moz-focus-inner,
+[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type='button']:-moz-focusring,
+[type='reset']:-moz-focusring,
+[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+
+[type='checkbox'],
+[type='radio'] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type='number']::-webkit-inner-spin-button,
+[type='number']::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type='search'] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+
+[type='search']::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 10+.
+ */
+
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+
+[hidden] {
+  display: none;
+}
+</style><style>.font {
+  font-family: 'PingFang SC', sans-serif;
+}
+.box-sizing {
+  box-sizing: border-box;
+}
+.wrap {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+body {
+  margin: 0;
+  font-family: PingFang SC, 'Microsoft YaHei', 'microsoft yahei ui', 'SF Pro SC', 'SF Pro Text', 'Helvetica Neue', Helvetica, 'Segoe UI', Roboto, 'Hiragino Sans GB', 'arial', SimSun, sans-serif !important;
+}
+html,
+body,
+#root,
+#root-slave {
+  height: 100%;
+}
+#root-slave .cdp-frontend-page {
+  overflow: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(173, 178, 194, 0.6) rgba(255, 255, 255, 0);
+}
+#root-slave .cdp-frontend-page:hover {
+  overflow-x: scroll;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  overflow-y: overlay;
+}
+#root-slave .cdp-frontend-page::-webkit-scrollbar {
+  -webkit-appearance: none;
+  background: transparent;
+  width: 4px;
+  height: 4px;
+}
+#root-slave .cdp-frontend-page::-webkit-scrollbar-track,
+#root-slave .cdp-frontend-page::-webkit-scrollbar-button,
+#root-slave .cdp-frontend-page::-webkit-scrollbar-corner,
+#root-slave .cdp-frontend-page::-webkit-scrollbar-track-piece {
+  display: none;
+}
+#root-slave .cdp-frontend-page::-webkit-scrollbar-thumb {
+  background: rgba(173, 178, 194, 0.6);
+  border-radius: 10px;
+}
+#root-slave .cdp-frontend-page::-webkit-scrollbar-thumb:hover {
+  background: rgba(123, 129, 156, 0.6);
+}
+#root-slave .cdp-frontend-page > .gio-layout-content {
+  height: 100%;
+}
+/* qiankun 微前端高度应减去 */
+div[id^='__qiankun_microapp_wrapper_'] {
+  height: calc(100vh - 60px);
+}
+.gio-drawer-footer .footer {
+  float: right;
+}
+.gio-drawer-footer .footer .gio-btn-primary {
+  margin-left: 8px;
+}
+.gio-select-disabled {
+  color: #c7cbd8;
+  background-color: #f7f8fc;
+  border-color: #dfe4ee;
+  cursor: not-allowed;
+}
+.gio-select-disabled .gio-select-item-text {
+  color: #313e75;
+}
+.table-row-pointer {
+  cursor: pointer;
+}
+.operation-menu-item {
+  padding: 0 12px;
+  border-radius: 4px;
+}
+.chart-container {
+  border: 1px solid #ebedf5;
+  border-radius: 4px;
+}
+.snapshot-container {
+  max-height: 220px;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 4px;
+}
+.gio-panel .gio-table-tbody > tr.gio-table-placeholder > .gio-table-cell {
+  border-bottom: transparent;
+}
+.gio-tabs-tablist {
+  display: flex;
+}
+</style><script src="chrome-extension://ncegkjaobdbmfnjkmebbobbligcbnjga/injected/listener.js"></script><script charset="utf-8" src="./GrowingIO Data Platform_files/63.chunk.js"></script><style>.not_found {
+  height: 100%;
+  overflow: auto;
+  padding: 20px;
+  margin: auto;
+}
+</style></head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root-slave"><div class="not_found"><div class="gio-page gio-page-normal gio-page-empty"><div class="gio-page__image gio-page__image-normal"><svg role="img" aria-labelledby="title" viewBox="0 0 260 164" fill="none"><title id="title">No data image</title><path d="M0 163.147c102.866-40.07 159.923-39.57 260 0H0z" fill="url(#no_data__prefix0__paint_linear__1)"></path><path d="M92.838 107.443l2.17-62.923a4 4 0 013.997-3.862h78.36a4 4 0 013.995 4.184l-2.893 62.923a4 4 0 01-3.995 3.816H96.836a4 4 0 01-3.998-4.138z" fill="#88A6FF"></path><path d="M118.04 10.944a2 2 0 012.392-1.51l59.711 13.493a2 2 0 011.51 2.391l-16.368 72.434a2 2 0 01-2.391 1.51l-59.711-13.493a2 2 0 01-1.51-2.391l16.367-72.434z" fill="#DCE6FA"></path><path d="M105 26a2 2 0 012-2h61.216a2 2 0 012 2v74.26a2 2 0 01-2 2H107a2 2 0 01-2-2V26z" fill="#F0F5FF"></path><path d="M88.263 108.789L82.53 50.758a4 4 0 013.981-4.394h17.57a4 4 0 012.828 1.172l2.548 2.548a4.001 4.001 0 002.829 1.172h58.952a4 4 0 013.994 3.787l2.834 53.14a4 4 0 01-3.994 4.213h-81.83a4 4 0 01-3.98-3.607z" fill="url(#no_data__prefix1__paint_linear__2)"></path><rect x="90.249" y="66.745" width="79.89" height="4.891" rx="2.446" fill="#F7F8FC"></rect><circle cx="92.695" cy="56.148" r="4.076" fill="#F7F8FC"></circle><circle cx="192.649" cy="30.253" r="3.752" stroke="#B8D1FF"></circle><circle cx="78.909" cy="109.978" r="2.689" stroke="#B8D1FF"></circle><path d="M99.105 18.56c0 8.806-9.994 15.945-22.323 15.945-12.328 0-22.323-7.139-22.323-15.945 0-8.806 9.995-15.945 22.323-15.945 12.33 0 22.323 7.139 22.323 15.945z" fill="#B8D1FF"></path><path d="M93.231 26.707a1 1 0 011.18.401l4.766 7.434c.51.796-.268 1.79-1.163 1.486l-13.073-4.44c-.895-.304-.907-1.567-.017-1.888l8.307-2.993z" fill="#B8D1FF"></path><circle cx="65.355" cy="18.826" r="2.392" fill="#fff"></circle><circle cx="76.768" cy="18.826" r="2.392" fill="#fff"></circle><circle cx="88.741" cy="18.826" r="2.392" fill="#fff"></circle><path d="M199.163 71.775a.3.3 0 01.512.09l2.176 5.939a.3.3 0 01-.334.398l-6.231-1.085a.3.3 0 01-.179-.488l4.056-4.854z" fill="#B8D1FF"></path><path d="M161.814 118.461c26.179 1.496 27.646-6.357 36.15-39.31" stroke="#B8D1FF" stroke-width="0.5" stroke-linecap="round" stroke-dasharray="1 1"></path><rect x="59.94" y="72.613" width="8.504" height="2.126" rx="1.063" transform="rotate(-22.655 59.94 72.613)" fill="#B8D1FF"></rect><rect x="64.93" y="76.29" width="8.504" height="2.126" rx="1.063" transform="rotate(-112.655 64.93 76.29)" fill="#B8D1FF"></rect><defs><lineargradient id="no_data__prefix0__paint_linear__1" x1="131.048" y1="133.286" x2="131.048" y2="163.147" gradientUnits="userSpaceOnUse"><stop stop-color="#B8D1FF"></stop><stop offset="1" stop-color="#fff" stop-opacity="0.453"></stop><stop offset="1" stop-color="#fff"></stop></lineargradient><lineargradient id="no_data__prefix1__paint_linear__2" x1="130" y1="62.5" x2="130" y2="137.5" gradientUnits="userSpaceOnUse"><stop stop-color="#B8D1FF"></stop><stop offset="1" stop-color="#698FFF"></stop></lineargradient></defs></svg></div><div class="gio-page__description gio-page__description-normal">抱歉，出现了一个错误，页面不见了</div><div class="gio-page__footer"><button type="button" class="gio-button gio-button_primary gio-button_normal" data-testid="button">返回首页</button></div></div></div></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  <script src="./GrowingIO Data Platform_files/bundle.js"></script><script src="./GrowingIO Data Platform_files/main_._m.chunk.js"></script><script src="./GrowingIO Data Platform_files/main_._n.chunk.js"></script><script src="./GrowingIO Data Platform_files/main_._node_modules_@.chunk.js"></script><script src="./GrowingIO Data Platform_files/main_._node_modules_@f.chunk.js"></script><script src="./GrowingIO Data Platform_files/main_._node_modules_f.chunk.js"></script><script src="./GrowingIO Data Platform_files/main_._node_modules_i.chunk.js"></script><script src="./GrowingIO Data Platform_files/main_._node_modules_q.chunk.js"></script><script src="./GrowingIO Data Platform_files/main_._node_modules_react-dom_cjs_react-dom.development.js_7b821dec.chunk.js"></script>
+
+</body></html>
